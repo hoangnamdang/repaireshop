@@ -1,5 +1,8 @@
+import { ModeToggle } from "@/components/ModeToggle";
 import NavbarButton from "@/components/NavbarButton";
-import { File, HomeIcon, UserRound } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import { File, HomeIcon, LogOutIcon, UserRound } from "lucide-react";
 import Link from "next/link";
 
 export default function Header() {
@@ -21,6 +24,18 @@ export default function Header() {
         <div className="flex items-center">
           <NavbarButton href="/tickets" label="Tickets" icon={File} />
           <NavbarButton href="/customer" label="Customer" icon={UserRound} />
+          <ModeToggle />
+          <Button
+            variant="ghost"
+            title="logout"
+            aria-label="logout"
+            className="rounded-full"
+            asChild
+          >
+            <LogoutLink>
+              <LogOutIcon />
+            </LogoutLink>
+          </Button>
         </div>
       </div>
     </header>
