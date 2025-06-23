@@ -1,0 +1,5 @@
+tutorial 
+https://www.youtube.com/watch?v=djDgTYrFMAY&list=PL0Zuz27SZ-6PCLz7VMP2QQdeKa83rshe5
+
+issues
+https://github.com/tailwindlabs/tailwindcss/issues/14622
